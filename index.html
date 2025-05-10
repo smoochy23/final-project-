@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REAX MOVIES</title>
+    <link rel="stylesheet" href="reax.css">
+    <style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* Light text for contrast */
+            font-family: Arial, sans-serif; /* Cleaner font */
+        }
+        footer p {
+            color: #cccccc; /* Subtle footer text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <h1>REAX MOVIES</h1>
+        <ol class="navg">
+            <li class="nav-item"><a href="animation.html">Animations</a></li>
+            <li class="nav-item"><a href="movies.html">Movies</a></li>
+            <li class="nav-item"><a href="tvshows.html">TV Shows</a></li>
+        </ol>
+        <div class="search">
+            <form>
+                <input type="text" placeholder="search">
+                <button><search></search></button>
+                <img src="icons/search1.png" class="icons">
+            </form>
+        </div>
+        <div>
+            <a href="sign.html" class="sign">Sign Up</a>
+        </div>
+        <div>
+            <a href="login.html" class="log">Log In</a>
+        </div>
+    </div>
+      <div class="A">
+        <img class="ims" src="image/11.jpg">
+        <img class="ims" src="image/29.jpg">
+        <img class="ims" src="image/16.jpg">
+        <img class="ims" src="image/40.jpg">
+    </div>
+        <script type="text/javascript">
+        var slideIndex = 0;
+        changeimage();
+
+        function changeimage() {
+            var i;
+            var x = document.getElementsByClassName("ims");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1 }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(changeimage, 5000);
+        }
+         </script>
+         <br>
+         <br>
+    <div>
+             <p class="best">LATEST MOVIES</p>
+        <a href="movies/club.mp4"><img src="image/2.jpg" class="image"></a>
+        <img src="image/5.jpg" class="image">
+        <img src="image/6.jpg" class="image">
+        <img src="image/6.jpg" class="image">
+        <img src="image/5.jpg" class="image">
+
+    </div>
+
+    <div>
+
+        <p class="best">MOST LIKED</p>
+        <img src="image/7.jpg" class="image">
+        <img src="image/8.jpg" class="image">
+        <img src="image/9.jpg" class="image">
+        <img src="image/19.jpg" class="image">
+        <img src="image/17.jpg" class="image">
+    </div>
+    <div>
+        <p class="best">POPULAR</p>
+        <img src="image/12.jpg" class="image">
+        <img src="image/13.jpg" class="image">
+        <img src="image/14.jpg" class="image">
+        <img src="image/15.jpg" class="image">
+        <img src="image/31.jpg" class="image">
+    </div>
+    <div>
+        <p class="best">FOR YOU</p>
+        <img src="image/17.jpg" class="image">
+        <img src="image/18.jpg" class="image">
+        <img src="image/19.jpg" class="image">
+        <img src="image/20.jpg" class="image">
+        <img src="image/21.jpg" class="image">
+    </div>
+    <footer>
+        <img src="icons/instagram.png" class="foot">
+        <img src="icons/telegram.png" class="foot">
+        <img src="icons/f3.png" class="foot">
+        <p>&copy; 2025. My website. All rights reserved.</p>
+    </footer>
+    <div class="bottom-nav">
+        <a href="index.html" class="bottom-icon">
+            <img src="icons/home1.png" alt="Home">
+            <p>Home</p>
+        </a>
+        <a href="shorttv.html" class="bottom-icon">
+            <img src="icons/quiz.png" alt="Short TV">
+            <p>Short TV</p>
+        </a>
+        <a href="downloads.html" class="bottom-icon">
+            <img src="icons/download.png " alt="Downloads">
+            <p>Downloads</p>
+        </a>
+        <a href="me.html" class="bottom-icon">
+            <img src="icons/user.png" alt="Me">
+            <p>Me</p>
+        </a>
+    </div>
+    <script type="text/javascript">
+        document.write("HELLO WORLD");
+    </script>
+</body>
+</html>

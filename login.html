@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form id="registrationForm" action="/submit-registration" method="POST">
+        <h1>User Login</h1>
+        <label for="Fullname">User name:</label>
+        <input type="text" id="Fullname" name="Fullname" placeholder="Enter your fullname" required>
+        <span class="error-message" id="user name-error"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <span class="error-message" id="password-error"></span>
+
+        <button type="submit">login</button>
+    </form>
+    <script src="index.js"></script>
+  
+</body>
+</html>
